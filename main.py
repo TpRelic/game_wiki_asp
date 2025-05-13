@@ -73,7 +73,7 @@ output_chat = output_model.start_chat(
 )
 
 def main():
-    print("Executed as main, send message to Gemini about Hypixel Skyblock.")
+    print("Executed as main \n We process the logic using ASP, then send it back to the AI for a human response.\n Ask an AI about Hypixel Skyblock.\n")
     # print(example_prompts.history_in)
     while True:
         user_input = input("Ask about Skyblock (or exit): ")
