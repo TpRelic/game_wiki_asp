@@ -215,7 +215,6 @@ _B ∉ [astraea,axe_of_the_shredded,bonzos_staff,dark_claymore,dragon_shortbow,h
 - Hyperion
 - Midas Staff
 - Spirit Scepter
-- A = items not potentially listed / unknown.
 Do you want to know more about any of these weapons?""",
 ]
 

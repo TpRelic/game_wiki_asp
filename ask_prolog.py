@@ -72,8 +72,6 @@ def query_prolog_helper(text):
     prolog_assert = ensure_period(prolog_assert)
     prolog_check = ensure_period(prolog_check)
     prolog_check2 = ensure_period(prolog_check2)
-    
-    print(prolog_assert)
     return prolog_assert, prolog_check, prolog_check2
 
 def ensure_period(text):
@@ -100,7 +98,7 @@ def query_prolog(text):
         process.terminate()
         return(f"Prolog generated a irrelevant query from: {text}")
     query = f"{prolog_assert}\n{prolog_check}\n{prolog_check2}\n" + "halt.\n" 
-    print(f"Sending SWI Prolog queries: {query}.\n")
+    # print(f"Sending SWI Prolog queries: {query}.\n")
     out, err = process.communicate(query) # Send all input at once
 
     # print

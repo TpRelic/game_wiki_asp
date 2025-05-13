@@ -84,9 +84,9 @@ def main():
             print("Empty input?")
         else:
             response_in = input_chat.send_message(content=user_input)
-            print(f"Asking Prolog: {response_in.text}")
+            #print(f"Asking Prolog: {response_in.text}")
             feedback = ask_prolog.query_prolog(response_in.text)
-            print(f"prolog feedback = {feedback}\n")
+            #print(f"prolog feedback = {feedback}\n")
             
             feedback = "The user asked " + user_input + "\n" + feedback
             
